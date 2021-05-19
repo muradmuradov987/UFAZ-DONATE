@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DONATE</title>
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <!--CSS-->
+    <link rel="stylesheet" href="./CSS/style.css" />
+    <!--Mobile CSS-->
+    <link rel="stylesheet" media="(max-width:500px)" href="./CSS/mobile.css" />
+    <!-- IPAD CSS -->
+    <link rel="stylesheet" media="(max-width:768px)" href="./CSS/ipad.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="left">
+            <form action="" id="donationForm">
+                <div class="specified-amount">
+                    <h2>Specified Amount</h2>
+                    <div class="options-section">
+                        <div class="field options" id="recurrence">
+                            <select name="recurrence">
+                                <option value="single">Single</option>
+                                <option value="monthly">Monthly</option>
+                            </select>
+                        </div>
+                        <div class="field options" id="currency">
+                            <select name="currency">
+                                <option value="azn">₼ AZN</option>
+                                <option value="eur">€ EUR</option>
+                                <option value="usd">$ USD</option>
+                            </select>
+                        </div>
+                        <div class="field options" id="amounts">
+                            <select id="amount">
+                                <option value=25>25</option>
+                                <option value=50>50</option>
+                                <option value=100>100</option>
+                            </select>
+                            <input type="text" class="amount" placeholder="Other">
+                        </div>
+                        <div id="donorType" class="options">
+                            <select name="donorType">
+                                <option value="individual">Individual</option>
+                                <option value="org">Company / Organization</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="info-section">
+                    <h2>My details</h2>
+                    <div class="field-group tabular" id="fullNameGroup">
+                        <div class="field" id="titleField">
+                            <label for="title">Title</label>
+                            <select name="title" id="title">
+                                <option value="mrs">Mrs.</option>
+                                <option value="ms">Ms.</option>
+                                <option value="mr">Mr.</option>
+                            </select>
+                        </div>
+                        <div class="field" id="firstNameField">
+                            <label for="firstName">Full name</label>
+                            <input type="text" id="firstName" name="lastName" placeholder="Jhon Doe">
+                        </div>
+                    </div>
+                    <div class="field">
+                        <label for="orgName">Company / Organization name</label>
+                        <input type="text" id="orgName" name="orgName" placeholder="French-Azerbaijani University">
+                    </div>
+                    <div class="field">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="jhon.doe@ufaz.az">
+                    </div>
+                    <div class="field">
+                        <label for="phone">Phone</label>
+                        <input type="text" id="phone" name="phone" placeholder="+994 XX  XXX XX XX">
+                    </div>
+                </div>
+                <div class="paymentDetails">
+                    <h2>Payment</h2>
+                    <div class="field-group tabular">
+                        <div class="field" id="cardNumber">
+                            <label for="cardNumber">Card number</label>
+                            <input type="text" name="cardNumber" placeholder="XXXX XXXX XXXX XXXX">
+                        </div>
+                        <div class="field" id="expiryDate">
+                            <input type="text" name="expiryDate" placeholder="MM/YY">
+                        </div>
+                        <div class="field" id="cvc">
+                            <input type="number" name="cvc" placeholder="CVC">
+                        </div>
+                    </div>
+
+                    <div class="field">
+                        <label for="nameOnCard">Name on Card</label>
+                        <input type="text" id="nameOnCard" placeholder="JHON DOE">
+                    </div>
+                    <div class="field" id="isNameSameAsFullname">
+                        <label for="isNameSameAsFullname">Is the name on the card same as your full name?</label>
+                        <input type="checkbox" name="isNameSameAsFullname" class="isNameSameAsFullname">
+                    </div>
+                </div>
+                <div class="donate-btn">
+                    <button class="btn">DONATE</button>
+                </div>
+
+            </form>
+
+
+
+            <div class="stripe-section">
+                <div class="secure-transaction">
+                    <div class="lock">
+                        <i class="fas fa-lock"></i>
+                        <p>Secure transaction</p>
+                    </div>
+                    <img class="stripe" src="./Images/stripe.png" alt="">
+                </div>
+                <div class="secure-info">
+                    <p>Payment are processed by Stripe Checkout.</p>
+                    <p><span style="color: #27AE60;">Terms and Conditions</span> of Stripe Checkout.</span>
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="right">
+            <main>
+                <nav>
+                    <img src="./Images/Ufaz_logo.png" alt="">
+                    <h1>Fund</h1>
+                </nav>
+                <div class="text-content">
+                    <h1>Welcome to our Fund website <br> We appreciate your support</h1>
+                    <p>Subscribe to our newsletter to receive latest updates from UFAZ</p>
+                    <div class="signup">
+                        <input class="in email" type="email" placeholder="Email Address" required name="email">
+                        <button><i class="fas fa-chevron-right"></i></button>
+                    </div>
+                </div>
+            </main>
+        </div>
+
+    </div>
+
+    <script src="./Javascript/index.js"></script>
+</body>
+
+</html>

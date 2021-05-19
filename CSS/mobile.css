@@ -1,0 +1,42 @@
+.container {
+    flex-direction: column-reverse;
+}
+
+.left {
+    width: 100%;
+    overflow-y: unset;
+}
+
+.specified-amount {
+    background-image: none;
+}
+
+#titleField {
+    width: 30%;
+}
+
+#firstNameField {
+    width: 70%;
+}
+
+.field-group.tabular {
+    align-items: flex-end;
+}
+
+.right {
+    width: 100%;
+}
+
+main {
+    padding: 32px 16px;
+}
+
+.signup {
+    width: 100%;
+    height: 40px;
+}
+
+.signup button {
+    width: 55px;
+    height: 40px;
+}

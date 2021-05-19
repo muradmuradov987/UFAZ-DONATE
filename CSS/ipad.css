@@ -1,0 +1,17 @@
+.container {
+    flex-direction: column-reverse;
+    box-shadow: none;
+}
+
+.left {
+    width: 100%;
+    overflow-y: unset;
+}
+
+.field-group.tabular {
+    align-items: flex-end;
+}
+
+.right {
+    width: 100%;
+}

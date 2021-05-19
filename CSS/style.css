@@ -1,0 +1,314 @@
+    @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&display=swap');
+    * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+    
+    body {
+        /*background-image: url(../Images/bg.svg);
+        background-repeat: no-repeat;
+        background-size: cover;*/
+        background: hsla(192, 79%, 76%, 1);
+        background: linear-gradient(180deg, rgb(0, 197, 247) 0%, hsla(0, 0%, 0%, 1) 100%);
+    }
+    
+    .container {
+        max-width: 1200px;
+        width: 100%;
+        margin: auto;
+        display: flex;
+    }
+    
+    .left {
+        width: 45%;
+        height: 100vh;
+        overflow-y: scroll;
+        background-color: white !important;
+    }
+    
+     ::-webkit-scrollbar {
+        width: 5px;
+    }
+    
+     ::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 5px white;
+        border-radius: 5px;
+    }
+    
+     ::-webkit-scrollbar-thumb {
+        background: #13C1BF;
+        border-radius: 10px;
+    }
+    
+     ::-webkit-scrollbar-thumb:hover {
+        background: #07a0a0;
+    }
+    
+    #donationForm {
+        background-color: white;
+    }
+    
+    .specified-amount {
+        padding: 1.5em 1em;
+        background-image: url(../Images/bg.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    h2 {
+        width: 100%;
+        padding-bottom: 0.5em;
+        text-align: center;
+    }
+    
+    input,
+    button {
+        width: 100%;
+        border: 1px solid rgba(0, 0, 0, .3);
+        border-radius: 1;
+        padding: 1em 1.5em;
+        outline: none;
+    }
+    
+    .options.pills {
+        display: flex;
+    }
+    
+    .options button:hover {
+        background-color: #d5e1f1;
+    }
+    
+    .options.pills>* {
+        border-radius: 1;
+        padding: .5rem;
+        background-color: white;
+        cursor: pointer;
+    }
+    
+    .options.pills>*:not(:last-child) {
+        margin-right: .5rem;
+    }
+    
+    .field {
+        position: relative;
+        margin-bottom: 1em;
+    }
+    
+    .info-section {
+        padding: 0.5em 1em;
+    }
+    
+    .field-group.tabular {
+        width: 100%;
+        display: flex;
+        align-items: flex-end;
+    }
+    
+    #fullNameGroup {
+        display: flex;
+    }
+    
+    #titleField {
+        width: 20%;
+        display: flex;
+        flex-direction: column;
+        margin-right: .5rem;
+    }
+    
+    #titleField select {
+        border: 1px solid rgba(0, 0, 0, .3);
+        border-radius: 1;
+        padding: 1em 1.5em;
+        outline: none;
+        font-size: 12px;
+        background-color: white;
+    }
+    
+    #firstNameField {
+        width: 80%;
+    }
+    
+    .paymentDetails {
+        padding: 0em 1em;
+    }
+    
+    #cardNumber {
+        width: 100%;
+    }
+    
+    #cardNumber input {
+        border-right: none;
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 0px;
+    }
+    
+    #expiryDate {
+        width: 20%;
+        text-align: center;
+    }
+    
+    #expiryDate input {
+        padding: 1em 0em;
+        border-right: none;
+        border-left: none;
+        border-radius: 0px;
+    }
+    
+    #cvc {
+        width: 20%;
+    }
+    
+    #cvc input {
+        text-align: center;
+        border-left: none;
+        border-top-left-radius: 0px;
+        border-bottom-left-radius: 0px;
+        padding: 1em 0em;
+    }
+    
+    #isNameSameAsFullname {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .isNameSameAsFullname {
+        width: 5%;
+    }
+    
+    .donate-btn {
+        padding: 0em 1em 1em 1em;
+    }
+    
+    .btn {
+        width: 100%;
+        padding: 15px;
+        color: white;
+        background-color: #13C1BF;
+        outline: none;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.699);
+        letter-spacing: 1px;
+    }
+    
+    .btn:hover {
+        background-color: #07a0a0;
+    }
+    
+    .stripe-section {
+        width: 100%;
+        background-color: #EAEADE;
+        padding: 1em;
+    }
+    
+    .secure-transaction {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+    
+    .lock {
+        display: flex;
+    }
+    
+    .lock p {
+        color: #B0AFA4;
+    }
+    
+    .lock i {
+        color: #B0AFA4;
+        margin-right: 10px;
+    }
+    
+    .stripe {
+        width: 150px;
+    }
+    
+    .secure-info {
+        color: #B0AFA4;
+    }
+    
+    .text-section {
+        width: 55%;
+        position: relative;
+    }
+    
+    .right {
+        width: 65%;
+        color: white;
+    }
+    
+    main {
+        width: 100%;
+        height: 100%;
+        padding: 2em 3em 2em 3em;
+    }
+    
+    nav {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 50px;
+    }
+    
+    nav img {
+        width: 100px;
+        margin-right: 30px;
+    }
+    
+    .text-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .text-content h1 {
+        margin-bottom: 50px;
+    }
+    
+    .text-content p {
+        font-size: 18px;
+        letter-spacing: 1px;
+        margin-bottom: 10px;
+    }
+    
+    .signup {
+        width: 60%;
+        display: flex;
+        position: relative;
+        height: 50px;
+    }
+    
+    .signup input {
+        width: 100%;
+        padding-left: 20px;
+        border-radius: 10px;
+        border: none;
+        outline: none;
+    }
+    
+    .signup button {
+        width: 75px;
+        height: 50px;
+        border-radius: 0px 10px 10px 0px;
+        border: none;
+        position: absolute;
+        right: 0;
+        cursor: pointer;
+        background-color: #13C1BF;
+    }
+    
+    .signup button:hover {
+        background-color: #07a0a0;
+    }
+    
+    .signup button i {
+        color: white;
+        font-size: 15px;
+    }
